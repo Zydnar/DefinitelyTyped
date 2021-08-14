@@ -32,16 +32,17 @@ export function generateToken(formattedKey: string): string;
  * - SHA1 (default)
  * - SHA256
  * - SHA512
- * @param digits The digits parameter may have the values 6 or 8, and determines
- * how long of a one-time passcode to display to the user.
- * @param period The amount of time the TOTP code will be valid for, in seconds.
+ * @param digits (default 6) The digits parameter may have the values 6 or 8, 
+ * and determines how long of a one-time passcode to display to the user.
+ * @param period (default 30) The amount of time the TOTP code will be valid for,
+ * in seconds.
  */
 export function generateTotpUri(formattedKey: string,
-                                accountName: string,
-                                issuer: string,
-                                algorithm: string,
-                                digits: number,
-                                period: number): string;
+                                accountName?: string,
+                                issuer?: string,
+                                algorithm?: string,
+                                digits?: number,
+                                period?: number): string;
 
 /**
  * Validates a time-based token within a +/- 30 second (90 seconds) window
