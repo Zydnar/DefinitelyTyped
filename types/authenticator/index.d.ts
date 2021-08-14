@@ -32,7 +32,7 @@ export function generateToken(formattedKey: string): string;
  * - SHA1 (default)
  * - SHA256
  * - SHA512
- * @param digits (default 6) The digits parameter may have the values 6 or 8, 
+ * @param digits (default 6) The digits parameter may have the values 6 or 8,
  * and determines how long of a one-time passcode to display to the user.
  * @param period (default 30) The amount of time the TOTP code will be valid for,
  * in seconds.
